@@ -85,9 +85,20 @@ function stringTimes(str, n) {
 // luckySum(1, 13, 3) → 1
 
 function luckySum(a, b, c){
-
-  //Code Goes Here
+  if (a==13){
+      return 0
+  }
+  if (b==13){
+      return  a
+  }
+  if (c==13){
+      return  a+b
+  }
+  return a+b+c
 }
+
+luckySum(1, 13, 3)
+
 
 // PROBLEM 5:
 //
@@ -104,8 +115,20 @@ function luckySum(a, b, c){
 // caught_speeding(65, true) → 0
 
 function caught_speeding(speed, is_birthday){
-  //Code Goes Here
+  var omg = 0
+  if (is_birthday=true){
+      speed-=5
+  }
+  if (speed >= 61 && speed <= 81){
+      omg+=1
+  }
+  else if (speed > 81){
+      omg+=2
+  }
+  alert(omg)
 }
+
+caught_speeding(65,false)
 
 
 // BONUS: MAKE BRICKS
@@ -122,5 +145,5 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 2, 10) → true
 
 function makeBricks(small, big, goal){
-  //Code Goes Here
+  if ()
 }

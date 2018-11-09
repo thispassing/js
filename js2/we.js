@@ -1,18 +1,15 @@
-function luckySum(a, b, c){
-
-    if a==1{
-        var what = "omg"
-        alert (what)
+function caught_speeding(speed, is_birthday){
+    var omg = 0
+    if (is_birthday=true){
+        speed-=5
     }
-    if b==13{
-        alert (a)
+    if (speed >= 61 && speed <= 81){
+        omg+=1
     }
-    if c==13{
-        alert (a+b)
+    else if (speed > 81){
+        omg+=2
     }
-    alert (a+b+c)
-}
-
-luckySum(1, 2, 3)
-
-alert ("stfu")
+    alert(omg)
+  }
+  
+  caught_speeding(65,false)
